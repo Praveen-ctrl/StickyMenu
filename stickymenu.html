@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        #header {
+            text-align: center;
+        }
+
+        nav {
+            box-sizing: border-box;
+            background-color: rgb(179, 60, 179);
+            border-radius: px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            padding: 8px 100px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+
+
+        }
+
+        nav ul li {
+            font-size: 22px;
+            list-style: none;
+            font-weight: 500;
+            padding: 3px 15px;
+            margin: 0px 15px;
+            border: 2px solid rgb(179, 60, 179);
+            border-radius: 25%;
+            color: aliceblue;
+        }
+
+        nav ul li:hover {
+
+            border: 2px solid greenyellow;
+            cursor: pointer;
+
+        }
+
+        #main {
+            text-align: center;
+
+        }
+
+        #main img {
+            width: 900px;
+            height: auto;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 21px;
+            margin: 0 31px;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            background-color: #290404;
+            font-size: 15px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+
+        <div id="header"><img src="apple1.png" alt=""></div>
+        <nav id="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Career </li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <div id="main"><img src="main.jpg" alt=""></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloremque accusantium maxime fugiat
+            esse
+            quam eaque facilis eos placeat minus praesentium laborum reprehenderit veniam, distinctio mollitia magni
+            illum
+            ea provident! Doloribus in quia ratione modi perspiciatis aperiam deleniti a eius. Excepturi possimus
+            adipisci
+            illo iste cum error deserunt, reiciendis ipsam cupiditate a impedit debitis praesentium eveniet labore.
+            Aperiam
+            odit libero magnam in voluptate enim aut rerum iusto eum accusantium earum quae quibusdam culpa, doloribus
+            tempora illum necessitatibus esse incidunt laudantium facilis hic dolorem? Autem, vitae minima quae nihil
+            dicta
+            ex eaque accusantium nostrum aut, voluptatem rerum consectetur eius perferendis recusandae cum. Dolores
+            aliquam
+            molestiae dignissimos cupiditate, rerum quis suscipit facilis quas consequuntur voluptatibus libero quam
+            quasi,
+            dicta aliquid animi neque! Doloremque porro iusto maiores esse, officia est. Ex repellendus libero sapiente.
+            Placeat consequuntur itaque, iure eum dolorum explicabo consectetur nam. Quasi inventore, rerum veritatis
+            eveniet
+            laudantium quia excepturi obcaecati harum, odit accusantium voluptas sint nostrum. Numquam vel, facilis
+            dolor
+            sapiente ratione in alias sed! Temporibus totam, vero tempore magnam illum impedit debitis repellat numquam
+            consequuntur aut volup
+            nobis, saepe pariatur voluptates mollitia accusantium ipsam quam corporis ipsa totam a voluptatum ullam
+            harum
+            accusamus? Deleniti veniam minus cumque nostrum dolorum distinctio tempora, aliquid quae impedit molestias
+            voluptas expedita ab eos eum, facere magnam iure enim possimus facilis ullam aut esse, quos est fuga! Enim
+            nemo
+            officia veritatis recusandae reprehenderit quas quae aliquid voluptates ipsum, reiciendis aspernatur nam
+            unde
+            architecto nesciunt sint! Accusamus ratione at doloremque minima, vitae recusandae natus iusto qui odit
+            excepturi in deleniti, molestias rem reiciendis neque blanditiis vel! Perspiciatis tempore aperiam rem minus
+            officia eligendi rerum ullam officiis iure quam, ipsa deleniti consectetur commodi quas totam nisi nobis quo
+            aliquam eveniet. Nihil molestias, molestiae magnam exercitationem repellendus nesciunt voluptates odio alias
+            illum officiis adipisci quisquam cumque reiciendis blanditiis quasi repellat tenetur ut? Officia accusantium
+            maiores nobis laboriosam nam placeat eligendi quibusdam animi aspernatur dolores. Fuga laboriosam impedit
+            nesciunt culpa mollitia corporis explicabo rerum.
+        </p>
+    </div>
+
+    <footer>Created by Praveen Patidar</footer>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            let navbar = document.getElementById("navbar");
+            if (window.pageYOffset >= 190) {
+                navbar.classList.add('sticky');
+
+            } else {
+                navbar.classList.remove('sticky');
+            }
+
+
+        });
+
+    </script>
+</body>
+
+</html>
